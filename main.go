@@ -1,6 +1,6 @@
 package main
 
-import "./internal/foo"
+import "github.com/bluearchive/ci-cd-testing/internal/foo"
 
 func main() {
 	foo.Bar()
