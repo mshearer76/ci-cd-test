@@ -8,7 +8,6 @@ before_script:
   - mkdir -p /go/src/github.com/mshearer76 /go/src/_/builds
   - cp -r $CI_PROJECT_DIR /go/src/github.com/mshearer76/cicdtest
   - ln -s /go/src/github.com/mshearer76 /go/src/_/builds/cicdtest
-  - make dep
 
 unit_tests:
   stage: test
