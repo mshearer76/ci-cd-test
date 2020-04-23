@@ -6,8 +6,8 @@ stages:
 
 before_script:
   - mkdir -p /go/src/github.com/bluearchive /go/src/_/builds
-  - cp -r $CI_PROJECT_DIR /go/src/github.com/bluarchive/ci-cd-testing
-  - ln -s /go/src/github.com/bluearchive /go/src/_/builds/ci-cd-testing
+  - cp -r $CI_PROJECT_DIR /go/src/github.com/bluarchive/ci-cd-test
+  - ln -s /go/src/github.com/bluearchive /go/src/_/builds/ci-cd-test
   - make dep
 
 unit_tests:
