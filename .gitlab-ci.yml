@@ -5,9 +5,7 @@ stages:
   - build
 
 before_script:
-  - mkdir -p /go/src/github.com/mshearer76 /go/src/_/builds
-  - cp -r $CI_PROJECT_DIR /go/src/github.com/mshearer76/cicdtest
-  - ln -s /go/src/github.com/mshearer76 /go/src/_/builds/cicdtest
+  - go get -u golang.org/x/lint/golint
 
 unit_tests:
   stage: test
