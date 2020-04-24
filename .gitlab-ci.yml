@@ -1,5 +1,9 @@
 image: "golang:1.14.2"
 
+variables:
+  REPO_NAME: github.com/mshearer76/cicdtest
+
+
 stages:
   - test
   - build
