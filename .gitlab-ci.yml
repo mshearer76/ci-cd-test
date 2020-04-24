@@ -4,6 +4,9 @@ stages:
   - test
   - build
 
+git:
+  clone: "/go/src/github.com/mshearer76/cicdtest"
+
 before_script:
   - go get -u golang.org/x/lint/golint
 
