@@ -6,7 +6,7 @@ stages:
 
 before_script:
   - go get -u golang.org/x/lint/golint
-  - ln -s /go/src/github.com/mshearer76/cicdtest /build/mshearer76/cicdtest
+  - ln -s /go/src/github.com/mshearer76/cicdtest /builds/mshearer76/cicdtest
 
 unit_tests:
   stage: test
